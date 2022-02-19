@@ -56,7 +56,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Almoni ML v5 AAA';
+    font-family: 'Almoni ML v5 AAA U';
+    font-weight: bold;
 }
 
 
@@ -67,7 +68,7 @@
     background-size: cover;
     background-position: top 5% right 0;
     animation-name: background-slider;
-    animation-duration: 10s;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
     animation-direction: reverse;
 }
@@ -194,14 +195,15 @@
     height: 16vh;
     background: linear-gradient(to right, #1d0570, #5002ae);
     direction: rtl;
+    padding: 20px 0;
 }
 
 .how-to {
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     flex-direction: row;
-    row-gap: 10px;
+    /* row-gap: 10px; */
     align-items: center;
     justify-content: space-between;
 }
@@ -221,8 +223,89 @@
     font-size: 16px;
 }
 
-.direction i {
-    color: white;
-    width: 48px;
-    height: 48px;
+.social-footer {
+    height: 7vh;
+    width: 100%;
+    background-color: #ff164e;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    align-items: center;
+}
+
+.social {
+    padding-left: 30px;
+}
+
+.social i {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: #ff164e;
+}
+
+.news-latter {
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding-right: 50px;
+    color: #fff;
+}
+
+.news-latter input {
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding-right: 15px;
+    height: 24px;
+}
+
+.news-latter input::placeholder {
+    color: #fff;
+    font-weight: 200;
+}
+
+.news-latter button {
+    width: 80px;
+    height: 24px;
+    border-radius: 12px;
+    background: #fff;
+    color: #ff164e;
+    border: none;
+
+}
+
+footer {
+    height: 4vh;
+    width: 100%;
+}
+
+footer .guide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 4vh;
+}
+
+footer .guide p:nth-child(1),
+footer .guide .copy-right {
+    padding: 0 35px;
+    direction: rtl;
+}
+
+footer .guide .payment {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer .guide .payment i {
+    font-size: 20px;
 }
