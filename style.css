@@ -98,12 +98,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 45px 60px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); */
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
     direction: rtl;
+}
+
+.logo img {
+    position: absolute;
+    top: -40px;
+    width: 200px;
+    height: 200px;
 }
 
 #navbar, #nav-social {
@@ -208,6 +215,10 @@
     justify-content: space-between;
 }
 
+.direction svg {
+    align-items: center;
+}
+
 .direction h2 {
     color: white;
     font-size: 36px;
@@ -298,6 +309,7 @@ footer .guide p:nth-child(1),
 footer .guide .copy-right {
     padding: 0 35px;
     direction: rtl;
+    font-weight: 100;
 }
 
 footer .guide .payment {
